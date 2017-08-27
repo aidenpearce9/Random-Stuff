@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight:700|Zilla+Slab:700');
-
 .slab {
   font-family: 'Zilla Slab';
 }
@@ -66,6 +65,35 @@
 }
 
 .main-area {
-  height: 45vh;
-  background-color: blue;
+  height: 180px;
+  margin-top: 10%;
+}
+
+.rock {
+  background-image: url('../img/rock.png');
+  height: 180px;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.paper {
+  background-image: url('../img/paper.png');
+  height: 180px;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.scissors {
+  background-image: url('../img/scissors.png');
+  height: 180px;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.joker {
+  height: 100%;
+  background-color: #333;
 }
