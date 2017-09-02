@@ -96,9 +96,58 @@
   visibility: hidden;
 }
 
+.front {
+  float: right;
+  color: #fff;
+}
+
+
 .result-area {
   background-image: url('../img/bubble.png');
   background-position: center;
   background-size: cover;
   height: 30vh;
+}
+
+.rock-text{
+  margin: 33% 33% 0 0;
+  transform: rotate(18deg);
+  font-size: 28px;
+  color: #f00;
+}
+
+.paper-text {
+  margin: 3.5% 40% 0 0;
+  transform: rotate(5deg);
+  font-size: 25px;
+}
+
+.scissors-text {
+  margin: 7.5%  40% 0 0;
+  transform: rotate(-15deg);
+  font-size: 20px;
+}
+
+#rock:hover, #paper:hover, #scissors:hover {
+  cursor: pointer;
+}
+
+.who-won {
+  margin-top: 12%;
+  margin-right: 5%;
+  font-size: 28px;
+  text-align: center;
+  color: #fff;
+}
+
+.green {
+  color: #0f0;
+}
+
+.red {
+  color: #f00;
+}
+
+.blue {
+  color: #00f;
 }
