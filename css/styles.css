@@ -7,6 +7,12 @@
   font-family: 'Zilla Slab Highlight';
 }
 
+.invisible {
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+}
+
 .main-bg {
   height: 100vh;
   width: 100vw;
@@ -72,7 +78,7 @@
 
 .rock {
   background-image: url('../img/rock.png');
-  height: 100%;
+  height: 180px;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
@@ -150,4 +156,112 @@
 
 .blue {
   color: #00f;
+}
+
+@media only screen and (max-width: 500px) {
+  .main-bg {
+    background-image: none;
+  }
+  .main-bg.container-fluid {
+    padding-left: 0px;
+  }
+  .red-bg {
+    height: 100vh;
+    width: 100vw;
+    background-image: none;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  .red-bg.container-fluid {
+    padding-left: 0px;
+  }
+  .black-bg {
+    background-image: url('../img/red.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  .main-area {
+    height: 45vh;
+    display: flex;
+    align-items: center;
+  }
+  .result-area {
+    background-image: url('../img/bubble.png');
+    background-position: center;
+    background-size: cover;
+    height: 23vh;
+  }
+  .rps-area.col-xs-6 {
+    padding: 0px;
+    height: 100%;
+  }
+  .rock {
+    background-image: url('../img/rock.png');
+    height: 170px;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  .paper {
+    background-image: url('../img/paper.png');
+    height: 170px;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    visibility: hidden;
+  }
+  .scissors {
+    background-image: url('../img/scissors.png');
+    height: 170px;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    visibility: hidden;
+  }
+  .rock-text{
+    margin: 40% 33% 0 0;
+    transform: rotate(18deg);
+    font-size: 28px;
+    color: #f00;
+  }
+  .paper-text {
+    margin: 0 40% 0 0;
+    transform: rotate(5deg);
+    font-size: 25px;
+  }
+  .scissors-text {
+    margin: 7.5%  40% 0 0;
+    transform: rotate(-15deg);
+    font-size: 20px;
+  }
+  .joker.col-xs-6 {
+    padding: 0px;
+  }
+  .who-won {
+    margin-top: 14%;
+    font-size: 23px;
+  }
+  .rock-text{
+    margin: 40% 33% 0 0;
+    transform: rotate(18deg);
+    font-size: 28px;
+    color: #f00;
+  }
+  .paper-text {
+    margin: 3.5% 40% 0 0;
+    transform: rotate(5deg);
+    font-size: 25px;
+  }
+  .scissors-text {
+    margin: 8.5%  40% 0 0;
+    transform: rotate(-15deg);
+    font-size: 20px;
+  }
 }
