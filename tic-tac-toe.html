@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/ttt_styles.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <title>Tic Tac Toe</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
     <div class="logo">
       <img src="img/logo.png" alt="logo" height="45px">
     </div>
-    <p>Try one of these as well!<i class="fa fa-arrow-right" aria-hidden="true"></i></p>
+    <p>Try one of these as well! <i class="fa fa-arrow-right" aria-hidden="true"></i></p>
     <ul class="nav-items slab">
       <a href="rock-paper-scissors.html"><li>Rock Paper Scissors</li></a>
       <a href="tic-tac-toe.html"><li>Tic Tac Toe</li></a>
@@ -22,25 +23,41 @@
   <div class="container-fluid uncharted">
     <div class="box">
       <div class="row main">
-        <div class="col-sm-4 info"></div>
-        <div class="col-sm-4 ttt-area">
-          <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"></div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"></div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"></div>
+        <div class="col-sm-3 info column text-center">
+          <h1 class="left-margin">Welcome!</h1>
+          <p class="left-margin">Pick X or O on the right to play!</p>
+          <div class="social-box left-margin">
+            <a href="">Facebook</a>
+            <a href="">Instagram</a>
+            <a href="">Github</a>
           </div>
         </div>
-        <div class="col-sm-4"></div>
+        <div class="col-sm-7 ttt-area column">
+          <div class="map">
+            <div class="ttt">
+              <div class="row box-rows">
+                <div id="a-1" class="col-sm-4 ttt-box"><h1 id="letter"></h1></div>
+                <div id="a-2" class="col-sm-4 ttt-box"><h1 id="letter"></h1></div>
+                <div id="a-3" class="col-sm-4 ttt-box"><h1 id="letter"></h1></div>
+              </div>
+              <div class="row box-rows">
+                <div id="b-1" class="col-sm-4 ttt-box"><h1 id="letter"></h1></div>
+                <div id="b-2" class="col-sm-4 ttt-box"><h1 id="letter"></h1></div>
+                <div id="b-3" class="col-sm-4 ttt-box"><h1 id="letter"></h1></div>
+              </div>
+              <div class="row box-rows">
+                <div id="c-1" class="col-sm-4 ttt-box"><h1 id="letter"></h1></div>
+                <div id="c-2" class="col-sm-4 ttt-box"><h1 id="letter"></h1></div>
+                <div id="c-3" class="col-sm-4 ttt-box"><h1 id="letter"></h1></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2 x-or-o column">
+          <h1 class="x blue"><i class="fa fa-times" aria-hidden="true"></i></h1>
+          <h1 class="o red"><i class="fa fa-circle-o" aria-hidden="true"></i></h1>
+          <h1 class="reset">Reset</h1>
+        </div>
       </div>
     </div>
   </div>
