@@ -22,9 +22,15 @@
   </div>
   <div class="container-fluid uncharted">
     <div class="box">
+      <div class="thinking-area">
+        <h1 id="thinking" class="thinking">thinking</h1>
+        <h1 id="firstDot" class="thinking">.</h1>
+        <h1 id="secondDot" class="thinking">.</h1>
+        <h1 id="thirdDot" class="thinking">.</h1>
+      </div>
       <div class="row main">
         <div class="col-sm-3 info column text-center">
-          <h1 class="left-margin">Welcome!</h1>
+          <h1 class="left-margin base-2">Welcome!</h1>
           <p class="left-margin">Pick X or O on the right to play!</p>
           <div class="social-box left-margin">
             <a href="">Facebook</a>
@@ -32,31 +38,26 @@
             <a href="">Github</a>
           </div>
         </div>
-        <div class="col-sm-7 ttt-area column">
+        <div class="col-sm-9 ttt-area column">
           <div class="map">
-            <div class="ttt">
+            <div id="ttt-area" class="ttt">
               <div class="row box-rows">
-                <div id="a-1" class="col-sm-4 ttt-box"><h1 id="letter"></h1></div>
-                <div id="a-2" class="col-sm-4 ttt-box"><h1 id="letter"></h1></div>
-                <div id="a-3" class="col-sm-4 ttt-box"><h1 id="letter"></h1></div>
+                <div class="a-1 col-sm-4 ttt-box"><i id="a1x" class="x-click fa fa-times fa-4x" aria-hidden="true"></i><i id="a1o" class="o-click fa fa-circle-o fa-4x" aria-hidden="true"></i></div>
+                <div class="a-2 col-sm-4 ttt-box"><i id="a2x" class="x-click fa fa-times fa-4x" aria-hidden="true"></i><i id="a2o" class="o-click fa fa-circle-o fa-4x" aria-hidden="true"></i></div>
+                <div class="a-3 col-sm-4 ttt-box"><i id="a3x" class="x-click fa fa-times fa-4x" aria-hidden="true"></i><i id="a3o" class="o-click fa fa-circle-o fa-4x" aria-hidden="true"></i></div>
               </div>
               <div class="row box-rows">
-                <div id="b-1" class="col-sm-4 ttt-box"><h1 id="letter"></h1></div>
-                <div id="b-2" class="col-sm-4 ttt-box"><h1 id="letter"></h1></div>
-                <div id="b-3" class="col-sm-4 ttt-box"><h1 id="letter"></h1></div>
+                <div class="b-1 col-sm-4 ttt-box"><i id="b1x" class="x-click fa fa-times fa-4x" aria-hidden="true"></i><i id="b1o" class="o-click fa fa-circle-o fa-4x" aria-hidden="true"></i></div>
+                <div class="b-2 col-sm-4 ttt-box"><i id="b2x" class="x-click fa fa-times fa-4x" aria-hidden="true"></i><i id="b2o" class="o-click fa fa-circle-o fa-4x" aria-hidden="true"></i></div>
+                <div class="b-3 col-sm-4 ttt-box"><i id="b3x" class="x-click fa fa-times fa-4x" aria-hidden="true"></i><i id="b3o" class="o-click fa fa-circle-o fa-4x" aria-hidden="true"></i></div>
               </div>
               <div class="row box-rows">
-                <div id="c-1" class="col-sm-4 ttt-box"><h1 id="letter"></h1></div>
-                <div id="c-2" class="col-sm-4 ttt-box"><h1 id="letter"></h1></div>
-                <div id="c-3" class="col-sm-4 ttt-box"><h1 id="letter"></h1></div>
+                <div class="c-1 col-sm-4 ttt-box"><i id="c1x" class="x-click fa fa-times fa-4x" aria-hidden="true"></i><i id="c1o" class="o-click fa fa-circle-o fa-4x" aria-hidden="true"></i></div>
+                <div class="c-2 col-sm-4 ttt-box"><i id="c2x" class="x-click fa fa-times fa-4x" aria-hidden="true"></i><i id="c2o" class="o-click fa fa-circle-o fa-4x" aria-hidden="true"></i></div>
+                <div class="c-3 col-sm-4 ttt-box"><i id="c3x" class="x-click fa fa-times fa-4x" aria-hidden="true"></i><i id="c3o" class="o-click fa fa-circle-o fa-4x" aria-hidden="true"></i></div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-2 x-or-o column">
-          <h1 class="x blue"><i class="fa fa-times" aria-hidden="true"></i></h1>
-          <h1 class="o red"><i class="fa fa-circle-o" aria-hidden="true"></i></h1>
-          <h1 class="reset">Reset</h1>
         </div>
       </div>
     </div>
